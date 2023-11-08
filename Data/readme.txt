@@ -5,5 +5,6 @@ column 2 S_N
 column 3 S_T
 column 4 T_N
 column 5 T_T
+column 6 q (where available)
 averaged over the relevant box volume
 Details of the runs used are in CAWB supplementary material.
