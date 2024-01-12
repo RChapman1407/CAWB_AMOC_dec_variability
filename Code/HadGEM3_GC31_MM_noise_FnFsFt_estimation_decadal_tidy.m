@@ -1,8 +1,11 @@
-%Run noise estimation on MO data
+%Chapman, Ashwin, Wood, Baker 2024
+%Run noise estimation on HadGEM3MM
+%3 box model for AMOC
+%Nov 2023
 %piControl HadGEM3-GC3.1-MM
 clear all; clc;
 
-HadGEM3MM = readmatrix('C:\Users\rc686\OneDrive - University of Exeter\RuthPeteRichard GRL paper\HadGEM3MM.txt');
+HadGEM3MM = readmatrix('HadGEM3MM.txt');
 SN = HadGEM3MM(:,2);
 ST = HadGEM3MM(:,3);
 time = HadGEM3MM(:,1);
@@ -214,8 +217,8 @@ p.Sn = 0.03488; p.St = 0.03563; p.Ss = 0.03444; p.Sip = 0.0345; p.Sb = 0.03475; 
 
 p.Ts = 5.349; p.T0 = 4.514;
 p.Kn = 4.73e6; p.Ks = 7.68e6; p.Kip = 123.49e6;
-%these still from FAMOUS A (no update)
-p.alpha = 0.12; p.beta = 790; p.eta = 66.061e6;
+p.eta = 4.821e6;
+p.alpha = 0.12; p.beta = 790; %these still from FAMOUS A (no update)
 
 %gamma still from FAMOUS A, no update
 p.lambda = 2.328e7; p.gamma = 0.58; p.mu = 0;
